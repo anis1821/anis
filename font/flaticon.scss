@@ -1,0 +1,61 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?47782ec5f29a1b885a2608d2ccd92374") format("truetype"),
+url("./flaticon.woff?47782ec5f29a1b885a2608d2ccd92374") format("woff"),
+url("./flaticon.woff2?47782ec5f29a1b885a2608d2ccd92374") format("woff2"),
+url("./flaticon.eot?47782ec5f29a1b885a2608d2ccd92374#iefix") format("embedded-opentype"),
+url("./flaticon.svg?47782ec5f29a1b885a2608d2ccd92374#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "settings": "\f101",
+    "cart": "\f102",
+    "layers": "\f103",
+    "customer-support": "\f104",
+    "speedometer": "\f105",
+    "monitor": "\f106",
+    "globe": "\f107",
+    "chat": "\f108",
+    "businessman": "\f109",
+);
+
+.flaticon-settings:before {
+    content: map-get($flaticon-map, "settings");
+}
+.flaticon-cart:before {
+    content: map-get($flaticon-map, "cart");
+}
+.flaticon-layers:before {
+    content: map-get($flaticon-map, "layers");
+}
+.flaticon-customer-support:before {
+    content: map-get($flaticon-map, "customer-support");
+}
+.flaticon-speedometer:before {
+    content: map-get($flaticon-map, "speedometer");
+}
+.flaticon-monitor:before {
+    content: map-get($flaticon-map, "monitor");
+}
+.flaticon-globe:before {
+    content: map-get($flaticon-map, "globe");
+}
+.flaticon-chat:before {
+    content: map-get($flaticon-map, "chat");
+}
+.flaticon-businessman:before {
+    content: map-get($flaticon-map, "businessman");
+}
